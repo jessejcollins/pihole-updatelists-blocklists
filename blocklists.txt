@@ -15,4 +15,4 @@ https://big.oisd.nl/
 https://nsfw.oisd.nl/
 https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
 https://lists.cyberhost.uk/malware.txt
-https://raw.githubusercontent.com/jessejcollins/supplement_firebog_dns_block_list/main/list.txt
+https://raw.githubusercontent.com/jessejcollins/pihole-updatelists-blocklists/main/list.txt

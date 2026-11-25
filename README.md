@@ -1,10 +1,12 @@
-# Supplemental DNS Block Lists
+# pihole-updatelists-blocklists
 
-This repo holds two files for Pi-hole:
+The Pi-hole adlist source for [jacklul/pihole-updatelists](https://github.com/jacklul/pihole-updatelists). It replaces the [Firebog "ticked" list](https://v.firebog.net/hosts/lists.php?type=tick) as `BLOCKLISTS_URL`. This repo was previously named `supplement_firebog_dns_block_list`, when it only held a small list to use alongside Firebog's.
+
+It holds two files:
 
 | File | Purpose |
 | --- | --- |
-| [`blocklists.txt`](blocklists.txt) | Every adlist URL Pi-hole uses, one per line. [pihole-updatelists](https://github.com/jacklul/pihole-updatelists) reads it in place of the [Firebog "ticked" list](https://v.firebog.net/hosts/lists.php?type=tick). |
+| [`blocklists.txt`](blocklists.txt) | Every adlist URL Pi-hole uses, one per line. pihole-updatelists reads it from `BLOCKLISTS_URL`. |
 | [`list.txt`](list.txt) | A small hosts-format blocklist of domains that other lists missed in [d3ward's Adblock Test](https://d3ward.github.io/toolz/adblock.html). It is one of the entries in `blocklists.txt`. |
 
 ## `blocklists.txt`
@@ -14,7 +16,7 @@ This is the single source of truth for Pi-hole's adlists; none are managed by ha
 ### Compose setting
 
 ```yaml
-BLOCKLISTS_URL: 'https://raw.githubusercontent.com/jessejcollins/supplement_firebog_dns_block_list/main/blocklists.txt'
+BLOCKLISTS_URL: 'https://raw.githubusercontent.com/jessejcollins/pihole-updatelists-blocklists/main/blocklists.txt'
 ```
 
 pihole-updatelists **disables** lists that drop out of this file but does not delete them; delete those in the Pi-hole UI. With the default `REQUIRE_COMMENT=true`, it only manages adlists whose comment contains `Managed by pihole-updatelists`, so an adlist added by hand is ignored even if its URL is in this file.
