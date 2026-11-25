@@ -25,14 +25,15 @@ pihole-updatelists **disables** lists that drop out of this file but does not de
 
 - **Main aggregated lists:** HaGeZi Pro, OISD Big
 - **HaGeZi add-ons:** Threat Intelligence Feeds (`tif`), DGA domains (30 days, from the NRD repo), badware hoster, dynamic DNS, spam TLDs, pop-up ads, fake
-- **NSFW:** OISD NSFW, chadmayfield porn top 1M
+- **NSFW:** OISD NSFW, HaGeZi NSFW
 - **Other malware:** cyberhost malware
-- **From Firebog, not covered elsewhere:** StevenBlack unified hosts, Frogeye first-party trackers, WindowsSpyBlocker spy, Prigent-Crypto, AssoEchap stalkerware indicators
+- **From Firebog, not covered elsewhere:** Frogeye first-party trackers, WindowsSpyBlocker spy, Prigent-Crypto, AssoEchap stalkerware indicators
 - **This repo:** `list.txt`
 
 ### Dropped from the Firebog set (already covered elsewhere)
 
-- **In StevenBlack unified hosts:** AdAway, FadeMind add.Spam, add.2o7Net, add.Risk and UncheckyAds, KADhosts, pgl.yoyo.org, bigdargon hostsVN
+- **Mostly in HaGeZi Pro and OISD Big:** StevenBlack unified hosts
+- **In HaGeZi Pro and OISD Big (formerly covered by StevenBlack):** AdAway, FadeMind add.Spam, add.2o7Net, add.Risk and UncheckyAds, KADhosts, pgl.yoyo.org, bigdargon hostsVN
 - **In OISD Big:** w3kbl, Spam404
 - **Sources for HaGeZi Multi/Pro:** Firebog AdguardDNS, Easylist and Easyprivacy, notrack-malware
 - **Sources for HaGeZi TIF:** Phishing Army extended, DandelionSprout AntiMalwareHosts, URLhaus (dead)
